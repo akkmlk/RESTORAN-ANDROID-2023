@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaftarActivity2">
+
+    <TextView
+        android:text="Silahkan Isi Data Pribadi Anda"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:background="@drawable/bg_input"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:hint="Nama Lengkap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:background="@drawable/bg_input"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:background="@drawable/bg_input"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="Alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <ImageView
+            android:id="@+id/btnEye"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <EditText
+            android:id="@+id/etConfirmPass"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:layout_below="@id/etPassword"
+            android:layout_marginTop="15dp"
+            android:hint="Konfirmasi Password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <ImageView
+            android:id="@+id/btnEyeConfirm"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/etPassword"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:text="Daftar"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/biru_tua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnHaveAkun"
+        android:text="Sudah Punya Akun"
+        android:padding="10dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/biru_muda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

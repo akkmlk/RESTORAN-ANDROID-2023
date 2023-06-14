@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvFoto"
+            app:cardCornerRadius="50dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+            <ImageView
+                android:id="@+id/ivFotoProfile"
+                android:src="@drawable/profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:text="Luminous Valentine"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:layout_toRightOf="@id/cvFoto"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:text="081000000001"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/cvFoto"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:text="Kerajaan Ruberius, Dunia Tensura"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_below="@id/tvUsername"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/cvFoto"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
